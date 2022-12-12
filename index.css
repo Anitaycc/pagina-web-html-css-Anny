@@ -1,0 +1,429 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: rgb(202, 31, 131);
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+section{
+    background-color: aqua;
+}
+.color-acento{ 
+    color:blueviolet;
+ }
+
+header{
+    background-color: rgb(63, 184, 123);
+    z-index: 100;
+}
+img{
+    width: 100px;
+}
+header .logo{
+    margin: 0;
+    padding: 20px 20px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("instp/billet2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(170, 27, 158);
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+#INICIO{
+    background-color: rgb(194, 84, 90);
+    color: rgb(13, 13, 14);
+    text-align: center;
+}
+#INICIO .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#NOSOTROS{
+    background-color: rgb(158, 32, 32);
+    color: rgb(13, 13, 14);
+    text-align: center;
+}
+
+#NOSOTROS .container{
+    padding: 150px 12px;
+}
+
+#NOSOTROS h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#NOSOTROS p{
+    display: none;
+}
+
+#NOSOTROS .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("instp/bille\ esmer.jpeg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("instp/billerosa.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("instp/mochi8.jpeg");
+
+}
+
+
+#PORTAFOLIO{
+
+}
+section{
+    background-color: darkslategrey;
+    color: rgb(13, 13, 14);
+    text-align: center;
+}
+.galeria{
+    margin-top: 0;
+    width: 100%;
+   /*  display: flex;
+    flex-wrap: wrap; */
+ 
+}
+.galeria img{
+    vertical-align: top;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    border: 4px  solid saddlebrown;
+    opacity: 0.5;
+    
+}
+.galeria img:hover{
+    border: 1px solid snow;
+    opacity: 1;
+}
+
+#CARACTERISTICA{
+    background-color: rgb(177, 26, 197);
+}
+#CARACTERISTICA .container{
+    padding: 150px 12px;
+    /* display: flex; */
+}
+#CARATERISTICA h2{
+    font-size: 3.2em;
+    color: rgb(13, 13, 14);
+    text-align: center;
+}
+#CARACTERISTICA li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: rgb(195, 207, 27);
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+
+#CONTACTOS h3{
+    color: red;
+    text-align: center;
+    padding-top: 50px;
+    bottom: -50px;
+    font-size: 40px;
+}
+
+footer{
+    background-color: rgb(238, 163, 52);
+    width: 100%;
+   /*  height: 600px; */
+   /* height: 100px; */
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    
+}
+.item3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 150px 12px;
+}
+.redondo{
+    width: 100%;
+    height:100px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+.redondo span{
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #INICIO .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #INICIO .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #INICIO h2{
+        margin-top: 0px;
+    }
+
+    #INICIO .img-container{
+        background-image: url("instp/mochi7.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #NOSOTROS .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #NOSOTROS p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #NOSOTROS h2{
+        font-size: 4em;
+    }
+
+    #NOSOTROS h3{
+        margin-top: 0;
+    }
+
+    #NOSOTROS.carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("instp/billerter4.jpeg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("instp/mochi6.jpeg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("instp/billeter2.jpg");
+
+    }
+    
+    #CARACTERISTICA{
+        background-image: url("instp/mochil5.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #CARACTERISTICA .container{
+        text-align: initial;
+    }
+
+    #CARACTERISTICA ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 850px) {
+    #CARACTERISTICA{
+        background-position-x: calc(100vw - 800px);
+    }
+}   
+ 
